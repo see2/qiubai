@@ -43,7 +43,7 @@ NEWSPIDER_MODULE = 'qiubai.spiders'
 DOWNLOADER_MIDDLEWARES = {
     	'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware':None,
 	
-	'qiubai.middlewares.RandomUAMiddleware': 4000,
+	'qiubai.middlewares.RandomUAMiddleware': 400,
 }
 
 # Enable or disable extensions
