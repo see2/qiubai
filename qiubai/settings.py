@@ -44,6 +44,7 @@ DOWNLOADER_MIDDLEWARES = {
     	'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware':None,
 	
 	'qiubai.middlewares.RandomUAMiddleware': 400,
+	'qiubai.middlewares.PrintUAMiddleware': 500,
 }
 
 # Enable or disable extensions
