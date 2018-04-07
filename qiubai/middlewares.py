@@ -5,7 +5,7 @@ import random
 class RandomUAMiddleware(object):
 
 	def process_request(self, request, spider):
-		request.headerp["User-Agent"]=random.choice()
+		request.headers["User-Agent"]=random.choice()
 
 
 
