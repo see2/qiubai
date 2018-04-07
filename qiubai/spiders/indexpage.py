@@ -1,5 +1,5 @@
 import scrapy
-class QiuBaiSpider(scrapy.Spider)
+class QiuBaiSpider(scrapy.Spider):
 	name="qiubai"
 	star_urls=[
 		"http://qiushibaike.com/" ,
