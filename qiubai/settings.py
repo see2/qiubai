@@ -55,10 +55,11 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'qiubai.pipelines.SomePipeline': 300,
-#}
-
+ITEM_PIPELINES = {
+    'qiubai.pipelines.MongoPipeline': 300,
+}
+MONGO_URI="127.0.0.1:27017"
+MONGO_DATABASE="qiubai"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
